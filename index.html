@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulces tentaciones</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="encabezado">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo de Pastelería">
+            <h1>Dulces tentaciones</h1>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="carrito-icono" id="carrito-icono">
+            🛒 Carrito (<span id="contador-carrito">0</span>) 
+        </div>
+    </header>
+
+    <!-- Sección de Bienvenida -->
+    <section id="inicio" class="seccion bienvenida">
+        <h2>Bienvenido a Dulces tentaciones</h2>
+        <p>Endulzamos tus momentos más especiales con nuestros postres únicos.</p>
+        <a href="#catalogo" class="boton">Ver Catálogo</a>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="seccion">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Pasteles personalizados</li>
+            <li>Repostería artesanal</li>
+            <li>Eventos especiales: bodas, cumpleaños, bautismos</li>
+            <li>Cursos de repostería</li>
+        </ul>
+    </section>
+
+    <!-- Portafolio -->
+    <section id="portafolio" class="seccion">
+        <h2>Portafolio</h2>
+        <div class="galeria">
+            <img src="images (1).jpg" alt="Pastel 1">
+            <img src="images (2).jpg" alt="Pastel 2">
+            <img src="tecnicas-de-reposteria-2-1024x576.jpg" alt="Pastel 3">
+            <img src="images.jpg" alt="Pastel 4">
+            <img src="Brownie-sin-pack-edit-scaled.jpg" alt="Pastel 5">
+        </div>
+    </section>
+
+    <!-- Catálogo -->
+    <section id="catalogo" class="seccion">
+        <h2>Catálogo</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="choco.jpg" alt="Tarta de Chocolate">
+                <h3>Torta de Chocolate</h3>
+                <p>$500</p>
+                <button class="boton-agregar" data-nombre="Tarta de Chocolate" data-precio="500">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="cheesecake.jpg" alt="Cheesecake">
+                <h3>Cheesecake</h3>
+                <p>$700</p>
+                <button class="boton-agregar" data-nombre="Cheesecake" data-precio="700">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="red velvet.jpg" alt="Red Velvet">
+                <h3>Red Velvet</h3>
+                <p>$600</p>
+                <button class="boton-agregar" data-nombre="Red Velvet" data-precio="600">Agregar al Carrito</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="seccion contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas o quieres hacer un pedido especial? ¡Contáctanos!</p>
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo" required>
+            <textarea placeholder="Escribe tu mensaje" required></textarea>
+            <button type="submit" class="boton">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Carrito de Compras -->
+    <div class="carrito" id="carrito">
+        <h2>Carrito de Compras</h2>
+        <div id="items-carrito"></div>
+        <p>Total: $<span id="total-carrito">0.00</span></p>
+        <button id="finalizar-compra" disabled>Finalizar Compra</button>
+        <button id="cerrar-carrito">Cerrar</button>
+    </div>
+</body>
+</html>
